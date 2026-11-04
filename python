@@ -1,0 +1,10 @@
+import random 
+
+c = "+-/*!$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+t = int(input("Digite o comprimento da senha: "))
+senha = ""
+
+for i in range(t):
+    senha += random.choice(c)
+
+print("Sua senha gerada é:", senha)
